@@ -10,12 +10,65 @@
       <div class="nd-6"></div>
       <div class="nd-7"></div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div id="about-col" class="col-4">
+          <img
+            src="./tester.jpeg"
+            width="95%"
+            height="80%"
+            class="hover-shadow"
+          />
+        </div>
+        <div id="about-col2" class="col-6">
+          <h3 id="heading">Who Am I?</h3>
+          <p id="whoami">
+            I'm Haniah Jardien, a Frontend Developer and an Aspiring Fullstack
+            Developer
+          </p>
+          <p id="paragraph2">
+            I am a 20 year old aspiring full-stack developer who, in her spare
+            time loves reading and writing. The technological world is evolving
+            everyday, it's becoming smarter and more exciting and I took one
+            look at the world around me, then decided that I wanted to be a part
+            of it all.
+          </p>
+          <hr />
+          <div class="heyeeh">
+            <div class="row justify-content-start">
+              <div class="col-4">
+                <p id="name">
+                  <span style="color: rgb(211, 90, 110)">Name: </span>Haniah
+                  Jardien
+                </p>
+                <p id="email">
+                  <span style="color: rgb(211, 90, 110)">Email: </span
+                  >jardienhaniah@gmail.com
+                </p>
+              </div>
+              <div class="col-4">
+                <p id="age">
+                  <span style="color: rgb(211, 90, 110)">Age: </span> 20
+                </p>
+                <p id="from">
+                  <span style="color: rgb(211, 90, 110)">From: </span>Cape Town,
+                  South Africa
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script></script>
 
 <style>
+.heyeeh {
+  margin-top: -90px;
+}
 #about-header {
   margin-top: 60px;
   font-size: 50px;
@@ -27,8 +80,7 @@
   height: 4px;
   border-radius: 50px;
   background: black;
-  margin-left: 598px;
-  margin-right: 800px;
+  margin-inline: auto;
 }
 .navbar-devider div {
   width: 14.28571429%;
@@ -160,5 +212,37 @@
 .navbar-devider .nd-7 {
   background: rgb(197, 179, 179);
   animation: nd7 3s infinite;
+}
+#about-col {
+  margin-left: -40px;
+}
+#heading {
+  color: rgb(211, 90, 110);
+  text-align: left;
+}
+#whoami {
+  font-size: 33px;
+  font-weight: bold;
+  text-align: left;
+}
+.row {
+  padding-top: 90px;
+}
+#paragraph2 {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.719);
+}
+#name {
+  /* text-align: left; */
+  left: 100px;
+}
+#age {
+  right: 100px;
+}
+#email {
+  left: 100px;
+}
+#from {
+  right: 100px;
 }
 </style>

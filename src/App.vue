@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <MDBNavbar expand="lg" dark bg="dark" container>
+    <MDBNavbar expand="lg" dark bg="dark" position="top" container>
       <MDBNavbarBrand class="nav-text"
         ><i class="fab fa-pagelines"></i> Haniah</MDBNavbarBrand
       >
