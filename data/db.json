@@ -1,0 +1,44 @@
+{
+  "Projects": [
+    {
+      "title": "WriteRight",
+      "image": "https://i.postimg.cc/Y2m9MSQp/Write-Right.png",
+      "id": "html",
+      "netlify": "https://quizzical-jackson-2415e7.netlify.app/",
+      "github": "https://github.com/HaniJar/My-Portfolio",
+      "details": "First ever website I built"
+    },
+    {
+      "title": "Team-Task",
+      "image": "https://i.postimg.cc/XYFN615Q/Team-Task.png",
+      "id": "html",
+      "netlify": "https://quirky-leakey-9c061c.netlify.app/",
+      "github": "https://github.com/HaniJar/Team-Task",
+      "details": "A team-task Nadeem and I worked on"
+    },
+    {
+      "title": "E-commerce Website",
+      "image": "https://i.postimg.cc/65Zx82QQ/e-commerce.png",
+      "id": "javascript",
+      "netlify": "https://agitated-edison-a8217c.netlify.app/",
+      "github": "https://github.com/HaniJar/New-Project",
+      "details": "I built an e-commerce website using Bootstrap"
+    },
+    {
+      "title": "JavaScript Calculator",
+      "image": "https://i.postimg.cc/9FHCttK9/JS-Calc.png",
+      "id": "vue",
+      "netlify": "https://reverent-bartik-231cc6.netlify.app/",
+      "github": "https://github.com/HaniJar/JavaScript-Project",
+      "details": "A Calculator built with JS"
+    },
+    {
+      "title": "Point Of Sale",
+      "image": "https://i.postimg.cc/tgwLR9H6/POS.png",
+      "id": "vue",
+      "netlify": "https://hopeful-feynman-653872.netlify.app/",
+      "github": "https://github.com/HaniJar/POS-Project",
+      "details": "POS built with JS"
+    }
+  ]
+}

@@ -14,7 +14,7 @@
       <div class="row">
         <div id="about-col" class="col-4">
           <img
-            src="./tester.jpeg"
+            src="./imgs/tester.jpeg"
             width="95%"
             height="80%"
             class="hover-shadow"
@@ -22,16 +22,12 @@
         </div>
         <div id="about-col2" class="col-6">
           <h3 id="heading">Who Am I?</h3>
-          <p id="whoami">
-            I'm Haniah Jardien, a Frontend Developer and an Aspiring Fullstack
-            Developer
-          </p>
+          <p id="whoami">I'm Haniah Jardien, an Aspiring Fullstack Developer</p>
           <p id="paragraph2">
-            I am a 20 year old aspiring full-stack developer who, in her spare
-            time loves reading and writing. The technological world is evolving
-            everyday, it's becoming smarter and more exciting and I took one
-            look at the world around me, then decided that I wanted to be a part
-            of it all.
+            I am a 20 year old aspiring full-stack developer who loves learning
+            new things. The technological world is evolving everyday, it's
+            becoming smarter and more exciting and I took one look at the world
+            around me, then decided that I wanted to be a part of it all.
           </p>
           <hr />
           <div class="heyeeh">
@@ -244,5 +240,9 @@
 }
 #from {
   right: 100px;
+}
+img {
+  border-style: ridge;
+  border-color: rgb(39, 39, 39);
 }
 </style>

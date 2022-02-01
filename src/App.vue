@@ -23,12 +23,10 @@
           <MDBNavbarItem router-link :to="{ name: 'Testimonials' }">
             Testimonials</MDBNavbarItem
           >
-          <MDBNavbarItem router-link :to="{ name: 'Work' }">
-            Work
-          </MDBNavbarItem>
           <MDBNavbarItem router-link :to="{ name: 'Resume' }">
             Resume
           </MDBNavbarItem>
+
           <MDBNavbarItem router-link :to="{ name: 'Contact' }">
             Contact
           </MDBNavbarItem>
@@ -75,7 +73,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
 }
 
 #nav {
