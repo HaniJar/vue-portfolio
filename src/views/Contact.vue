@@ -14,7 +14,7 @@
       <div id="col1" class="col-6">
         <div class="container1">
           <h3 id="message-me">Message Me</h3>
-          <form>
+          <form action="https://formspree.io/f/mlezjnaz" method="POST">
             <ul>
               <label for="name"></label>
               <input
@@ -43,11 +43,23 @@
           </form>
         </div>
       </div>
+
       <div class="col-4">
         <h3 id="contact-info">Contact Info</h3>
-        Feel free to contact me!
-
-        <div class="vl"></div>
+        <h5 id="words">Feel free to contact me!</h5>
+        <div class="info">
+          <h4><i class="fas fa-signature"></i> Name:</h4>
+          <p>Haniah Jardien</p>
+          <hr />
+          <h4><i class="fas fa-map-marker-alt"></i> Location:</h4>
+          <p>Cape Town, South Africa</p>
+          <hr />
+          <h4><i class="fas fa-phone-alt"></i> Call Me:</h4>
+          <p>065 936 5051</p>
+          <hr />
+          <h4><i class="fas fa-envelope"></i> Email Me:</h4>
+          <p>jardienhaniah@gmail.com</p>
+        </div>
       </div>
     </div>
   </div>
@@ -278,5 +290,12 @@ textarea {
   height: 300px;
   margin-left: 100px;
   margin-top: 25px;
+}
+.info {
+  color: white;
+}
+#words {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 </style>

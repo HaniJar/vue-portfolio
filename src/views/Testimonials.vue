@@ -18,16 +18,12 @@
             class="quote"
           />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            dolores ipsa impedit ab odit, vel quo, sit maiores sunt enim
-            consectetur architecto, rerum officiis neque animi natus ullam a
-            corporis?
+            Very bright person. She knows when to play hard and work hard. Also
+            very reliable when it comes to helping people out. Everyone needs a
+            Haniah!
           </p>
-          <img
-            src="https://i.postimg.cc/1z6DxG0D/blockquotes.png"
-            class="user"
-          />
-          <h3>John Doe</h3>
+          <img src="https://i.postimg.cc/hjqv4s31/craig.png" class="image" />
+          <h3 class="people">Craig Braaf</h3>
         </div>
       </div>
       <div class="box">
@@ -37,16 +33,12 @@
             class="quote"
           />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            dolores ipsa impedit ab odit, vel quo, sit maiores sunt enim
-            consectetur architecto, rerum officiis neque animi natus ullam a
-            corporis?
+            Haniah is a very hard working and determined young women. She makes
+            it her duty do the task at hand to the best of her abilities. I
+            enjoy working with her!
           </p>
-          <img
-            src="https://i.postimg.cc/1z6DxG0D/blockquotes.png"
-            class="user"
-          />
-          <h3>John Doe</h3>
+          <img src="https://i.postimg.cc/y8jC3PdT/tursha-1.png" class="image" />
+          <h3 class="people">Tursha Arendse</h3>
         </div>
       </div>
       <div class="box">
@@ -56,16 +48,12 @@
             class="quote"
           />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            dolores ipsa impedit ab odit, vel quo, sit maiores sunt enim
-            consectetur architecto, rerum officiis neque animi natus ullam a
-            corporis?
+            Haniah is very a good lady who works very hard to get what she
+            wants, very persistent and goal driven, she never gives up until she
+            gets what she wants.
           </p>
-          <img
-            src="https://i.postimg.cc/1z6DxG0D/blockquotes.png"
-            class="user"
-          />
-          <h3>John Doe</h3>
+          <img src="https://i.postimg.cc/qB6rDybk/lilly-1.jpg" class="image" />
+          <h3 class="people">Lilitha Ngele</h3>
         </div>
       </div>
     </div>
@@ -280,5 +268,18 @@
     height: auto;
     padding: 30px 20px;
   }
+}
+.image {
+  height: 60px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 30px;
+  margin-top: 5px;
+}
+.quote {
+  border-style: none;
+}
+.people {
+  margin-top: 15px;
 }
 </style>
