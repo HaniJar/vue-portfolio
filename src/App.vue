@@ -64,6 +64,27 @@ export default {
       collapse5,
     };
   },
+
+  methods: {
+    handleSubmit() {
+      console.log(this.name, this.mail, this.msg);
+      fetch("http://localhost:5000/contact", {
+        method: "POST",
+        body: JSON.stringify({
+          name: this.name,
+          mail: this.mail,
+          contact: this.contact,
+          msg: this.msg,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((e) => alert(e.msg));
+    },
+  },
 };
 </script>
 

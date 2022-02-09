@@ -13,11 +13,13 @@
     <div class="row">
       <div id="col1" class="col-6">
         <div class="container1">
-          <h3 id="message-me">Message Me</h3>
-          <form action="https://formspree.io/f/mlezjnaz" method="POST">
+          <form @submit.prevent="handleSubmit">
+            <h3 id="message-me">Message Me</h3>
+
             <ul>
               <label for="name"></label>
               <input
+                v-model="name"
                 type="text"
                 id="name"
                 name="user_name"
@@ -26,6 +28,7 @@
 
               <label for="mail"></label>
               <input
+                v-model="mail"
                 type="email"
                 id="mail"
                 name="user_email"
@@ -34,7 +37,12 @@
 
               <li>
                 <label for="msg"></label>
-                <textarea rows="4" cols="21" placeholder="Message"></textarea>
+                <textarea
+                  v-model="msg"
+                  rows="4"
+                  cols="21"
+                  placeholder="Message"
+                ></textarea>
               </li>
               <li>
                 <button class="butt-on" type="submit">Send Message</button>
@@ -65,7 +73,40 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      name: "",
+      mail: "",
+      msg: "",
+    };
+  },
+  methods: {
+    handleSubmit() {
+      console.log("Form has been submitted");
+      console.log(this.name);
+      console.log(this.mail);
+      console.log(this.msg);
+      fetch("http://localhost:5000/contact", {
+        method: "POST",
+        body: JSON.stringify({
+          name: this.name,
+          mail: this.mail,
+          contact: this.contact,
+          msg: this.msg,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((e) => alert(e.msg));
+    },
+  },
+};
+</script>
 
 <style>
 #contact-header {
@@ -269,7 +310,7 @@ textarea {
 }
 #message-me {
   text-align: left;
-  margin-left: 55px;
+  margin-left: 220px;
   color: white;
   font-family: sans-serif;
   font-weight: bold;
