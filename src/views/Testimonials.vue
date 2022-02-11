@@ -10,57 +10,72 @@
       <div class="nd-6"></div>
       <div class="nd-7"></div>
     </div>
-    <div class="container3">
-      <div class="box">
-        <div class="box-content">
-          <img
-            src="https://i.postimg.cc/1z6DxG0D/blockquotes.png"
-            class="quote"
-          />
-          <p>
-            Very bright person. She knows when to play hard and work hard. Also
-            very reliable when it comes to helping people out. Everyone needs a
-            Haniah!
+  </div>
+  <div class="testimonials" v-if="testimonials.length">
+    <div
+      v-for="Testimonial of testimonials"
+      :key="Testimonial.id"
+      class="Testimonial"
+    >
+      <div class="card">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+          class="card-img-top"
+          alt="Fissure in Sandstone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
           </p>
-          <img src="https://i.postimg.cc/hjqv4s31/craig.png" class="image" />
-          <h3 class="people">Craig Braaf</h3>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-content">
-          <img
-            src="https://i.postimg.cc/1z6DxG0D/blockquotes.png"
-            class="quote"
-          />
-          <p>
-            Haniah is a very hard working and determined young women. She makes
-            it her duty do the task at hand to the best of her abilities. I
-            enjoy working with her!
-          </p>
-          <img src="https://i.postimg.cc/y8jC3PdT/tursha-1.png" class="image" />
-          <h3 class="people">Tursha Arendse</h3>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-content">
-          <img
-            src="https://i.postimg.cc/1z6DxG0D/blockquotes.png"
-            class="quote"
-          />
-          <p>
-            Haniah is very a good lady who works very hard to get what she
-            wants, very persistent and goal driven, she never gives up until she
-            gets what she wants.
-          </p>
-          <img src="https://i.postimg.cc/qB6rDybk/lilly-1.jpg" class="image" />
-          <h3 class="people">Lilitha Ngele</h3>
+          <a href="#!" class="btn btn-primary">Button</a>
         </div>
       </div>
     </div>
   </div>
+
+  <div v-else>
+    <p>Loading Projects...</p>
+  </div>
 </template>
 
-<script></script>
+<script>
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardImg,
+  MDBBtn,
+  mdbRipple,
+} from "mdb-vue-ui-kit";
+export default {
+  components: {
+    MDBCard,
+    MDBCardBody,
+    MDBCardTitle,
+    MDBCardText,
+    MDBCardImg,
+    MDBBtn,
+  },
+  data() {
+    return {
+      testimonials: [],
+    };
+  },
+  mounted() {
+    fetch(" https://haniah-api.herokuapp.com/testimonials")
+      .then((res) => res.json())
+      .then((data) => (this.testimonials = data))
+      .catch((err) => console.log(err.message));
+  },
+
+  directives: {
+    mdbRipple,
+  },
+};
+</script>
 
 <style>
 #testimonials-header {
@@ -229,7 +244,7 @@
   background: rgb(216, 101, 120);
 }
 
-.container3 .box .box-content {
+/* .container3 .box .box-content {
   padding: 30px;
   text-align: center;
 }
@@ -246,7 +261,7 @@
 .container3 .box .box-content .user {
   max-width: 72px;
   border-radius: 50%;
-}
+} */
 
 .container3 .box .box-content h3 {
   color: #ffffff;
@@ -269,13 +284,7 @@
     padding: 30px 20px;
   }
 }
-.image {
-  height: 60px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 30px;
-  margin-top: 5px;
-}
+
 .quote {
   border-style: none;
 }

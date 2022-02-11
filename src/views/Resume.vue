@@ -49,7 +49,7 @@
         <div class="direction-r">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">LifeChoices Coding Academ</span>
+            <span class="flag">LifeChoices Coding Academy</span>
             <span class="time-wrapper"
               ><span class="time">Sept 2021</span></span
             >

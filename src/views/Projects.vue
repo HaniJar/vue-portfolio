@@ -11,8 +11,8 @@
       <div class="nd-7"></div>
     </div>
   </div>
-  <div class="projects" v-if="Projects.length">
-    <div v-for="Project of Projects" :key="Project.id" class="Project">
+  <div class="projects" v-if="projects.length">
+    <div v-for="Project of projects" :key="Project.id" class="Project">
       <MDBCard>
         <a v-mdb-ripple="{ color: 'light' }">
           <MDBCardImg :src="Project.image" top alt="..." />
@@ -22,7 +22,7 @@
           <MDBCardText>
             {{ Project.details }}
           </MDBCardText>
-          <MDBBtn tag="a" target="_blank" :href="Projects.github" color="danger"
+          <MDBBtn tag="a" target="_blank" :href="Project.github" color="danger"
             >Github</MDBBtn
           >
           <MDBBtn tag="a" target="_blank" :href="Project.netlify" color="danger"
@@ -59,13 +59,13 @@ export default {
   },
   data() {
     return {
-      Projects: [],
+      projects: [],
     };
   },
   mounted() {
-    fetch("http://localhost:3000/Projects")
+    fetch("https://haniah-api.herokuapp.com/projects")
       .then((res) => res.json())
-      .then((data) => (this.Projects = data))
+      .then((data) => (this.projects = data))
       .catch((err) => console.log(err.message));
   },
 
@@ -86,10 +86,10 @@ export default {
   padding: 1rem 80px;
   font-size: 1.2rem;
 }
-.img {
+/* .img {
   width: 300px;
   height: 300px;
-}
+} */
 #projects-header {
   margin-top: 60px;
   font-size: 50px;

@@ -93,7 +93,6 @@ export default {
         body: JSON.stringify({
           name: this.name,
           mail: this.mail,
-          contact: this.contact,
           msg: this.msg,
         }),
         headers: {
@@ -101,7 +100,7 @@ export default {
         },
       })
         .then((response) => response.json())
-        .then((json) => console.log(json))
+        .then((json) => alert(json.msg))
         .catch((e) => alert(e.msg));
     },
   },
