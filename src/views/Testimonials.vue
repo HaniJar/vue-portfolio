@@ -36,7 +36,7 @@
   </div>
 
   <div v-else>
-    <p>Loading Projects...</p>
+    <p>Loading Testimonials...</p>
   </div>
 </template>
 
@@ -65,7 +65,7 @@ export default {
     };
   },
   mounted() {
-    fetch(" https://haniah-api.herokuapp.com/testimonials")
+    fetch("https://haniah-api.herokuapp.com/testimonials")
       .then((res) => res.json())
       .then((data) => (this.testimonials = data))
       .catch((err) => console.log(err.message));

@@ -88,7 +88,7 @@ export default {
       console.log(this.name);
       console.log(this.mail);
       console.log(this.msg);
-      fetch("http://localhost:5000/contact", {
+      fetch("https://haniah-api.herokuapp.com/contact", {
         method: "POST",
         body: JSON.stringify({
           name: this.name,
