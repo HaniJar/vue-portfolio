@@ -24,7 +24,7 @@ export default {
   name: "Home",
   components: {},
 };
-const sentences = [" a Frontend Developer", " an Aspiring Fullstack Developer"];
+const sentences = [" a Fullstack Developer"];
 
 function waitForMs(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));

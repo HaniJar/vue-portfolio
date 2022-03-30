@@ -1,6 +1,6 @@
 <template>
-  <div class="testimonials">
-    <h1 id="testimonials-header">Testimonials</h1>
+  <div class="project">
+    <h1 id="testimonials-header">Testimonial</h1>
     <div class="navbar-devider">
       <div class="nd-1"></div>
       <div class="nd-2"></div>
@@ -11,73 +11,73 @@
       <div class="nd-7"></div>
     </div>
   </div>
-  <div class="testimonials" v-if="testimonials.length">
+  <div class="projects" v-if="Testimonials.length">
     <div
-      v-for="Testimonial of testimonials"
+      v-for="Testimonial of Testimonials"
       :key="Testimonial.id"
       class="Testimonial"
     >
-      <div class="card">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-          class="card-img-top"
-          alt="Fissure in Sandstone"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#!" class="btn btn-primary">Button</a>
-        </div>
-      </div>
+      <MDBRow>
+        <MDBCol sm="3">
+          <MDBCard>
+            <MDBCardImg :src="Testimonial.image" top alt="..." />
+
+            <MDBCardBody>
+              <MDBCardTitle>{{ Testimonial.name }}</MDBCardTitle>
+              <MDBCardText>
+                {{ Testimonial.paragraph }}
+              </MDBCardText>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+      </MDBRow>
     </div>
   </div>
 
   <div v-else>
-    <p>Loading Testimonials...</p>
+    <p>Loading Projects...</p>
   </div>
 </template>
 
 <script>
 import {
+  MDBRow,
+  MDBCardImg,
+  MDBCol,
   MDBCard,
   MDBCardBody,
+  MDBCardHeader,
   MDBCardTitle,
   MDBCardText,
-  MDBCardImg,
   MDBBtn,
-  mdbRipple,
 } from "mdb-vue-ui-kit";
 export default {
   components: {
+    MDBCardImg,
+    MDBRow,
+    MDBCol,
     MDBCard,
     MDBCardBody,
+    MDBCardHeader,
     MDBCardTitle,
     MDBCardText,
-    MDBCardImg,
     MDBBtn,
   },
   data() {
     return {
-      testimonials: [],
+      Testimonials: [],
     };
   },
   mounted() {
     fetch("https://haniah-api.herokuapp.com/testimonials")
       .then((res) => res.json())
-      .then((data) => (this.testimonials = data))
+      .then((data) => (this.Testimonials = data))
       .catch((err) => console.log(err.message));
-  },
-
-  directives: {
-    mdbRipple,
   },
 };
 </script>
 
-<style>
+<style scoped>
 #testimonials-header {
   margin-top: 60px;
   font-size: 50px;
@@ -285,10 +285,12 @@ export default {
   }
 }
 
-.quote {
-  border-style: none;
+.card-body {
+  width: 100%;
+  height: 50%;
 }
-.people {
-  margin-top: 15px;
+.card-img-top {
+  width: 50px;
+  height: 50px;
 }
 </style>

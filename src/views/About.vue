@@ -24,10 +24,10 @@
           <h3 id="heading">Who Am I?</h3>
           <p id="whoami">I'm Haniah Jardien, an Aspiring Fullstack Developer</p>
           <p id="paragraph2">
-            I am a 20 year old aspiring full-stack developer who loves learning
-            new things. The technological world is evolving everyday, it's
-            becoming smarter and more exciting and I took one look at the world
-            around me, then decided that I wanted to be a part of it all.
+            I am an aspiring full-stack developer who loves learning new things.
+            The technological world is evolving everyday, it's becoming smarter
+            and more exciting and I took one look at the world around me, then
+            decided that I wanted to be a part of it all.
           </p>
           <hr />
           <div class="heyeeh">
@@ -44,7 +44,7 @@
               </div>
               <div class="col-4">
                 <p id="age">
-                  <span style="color: rgb(211, 90, 110)">Age: </span> 20
+                  <span style="color: rgb(211, 90, 110)">D.O.B: </span> 22/09/01
                 </p>
                 <p id="from">
                   <span style="color: rgb(211, 90, 110)">From: </span>Cape Town,

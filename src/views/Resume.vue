@@ -16,13 +16,16 @@
         <div class="direction-r">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Vista High School</span>
-            <span class="time-wrapper"><span class="time">Dec 2019</span></span>
+            <span class="flag">LifeChoices Coding Academy</span>
+            <span class="time-wrapper"
+              ><span class="time">Sept 2021- Current</span></span
+            >
           </div>
           <div class="desc">
-            National Senior Certificate: <br />
+            Aspiring Full-Stack Developer: <br />
             <hr />
-            In 2019 I graduated from Vista High School in Cape Town
+            Close to the end of September, I started at Lifechoices Coding
+            Academy to study programming.
           </div>
         </div>
       </li>
@@ -33,13 +36,15 @@
           <div class="flag-wrapper">
             <span class="hexa"></span>
             <span class="flag">Long Life Lettering</span>
-            <span class="time-wrapper"><span class="time">Jan 2020</span></span>
+            <span class="time-wrapper"
+              ><span class="time">Jan 2020- April 2020</span></span
+            >
           </div>
           <div class="desc">
             Front-Desk Receptionist: <br />
             <hr />
             In January of 2020 I worked at Long Life Lettering, a printing
-            company as a front-desk receptionist.
+            company as a front-desk receptionist for 4 months
           </div>
         </div>
       </li>
@@ -49,16 +54,15 @@
         <div class="direction-r">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">LifeChoices Coding Academy</span>
+            <span class="flag">Vista High School</span>
             <span class="time-wrapper"
-              ><span class="time">Sept 2021</span></span
+              ><span class="time">Jan 2014- Dec 2019</span></span
             >
           </div>
           <div class="desc">
-            Aspiring Full-Stack Developer: <br />
+            National Senior Certificate: <br />
             <hr />
-            In the middle of September, I started at Lifechoicesto study
-            programming.
+            In December 2019 I graduated from Vista High School in Cape Town
           </div>
         </div>
       </li>

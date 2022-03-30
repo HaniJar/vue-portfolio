@@ -19,9 +19,12 @@
         </a>
         <MDBCardBody>
           <MDBCardTitle>{{ Project.title }}</MDBCardTitle>
-          <MDBCardText>
-            {{ Project.details }}
-          </MDBCardText>
+          <MDBCardTitle
+            ><span style="color: rgb(128, 127, 127)">{{
+              Project.description
+            }}</span></MDBCardTitle
+          >
+
           <MDBBtn tag="a" target="_blank" :href="Project.github" color="danger"
             >Github</MDBBtn
           >
@@ -75,7 +78,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .projects {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
