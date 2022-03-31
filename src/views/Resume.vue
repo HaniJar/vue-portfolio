@@ -37,7 +37,7 @@
             <span class="hexa"></span>
             <span class="flag">Long Life Lettering</span>
             <span class="time-wrapper"
-              ><span class="time">Jan 2020- April 2020</span></span
+              ><span class="time">Jan 2020 - April 2020</span></span
             >
           </div>
           <div class="desc">
@@ -56,7 +56,7 @@
             <span class="hexa"></span>
             <span class="flag">Vista High School</span>
             <span class="time-wrapper"
-              ><span class="time">Jan 2014- Dec 2019</span></span
+              ><span class="time">Jan 2014 - Dec 2019</span></span
             >
           </div>
           <div class="desc">
@@ -378,11 +378,12 @@ header p {
   position: relative;
   display: inline;
   background: rgb(255, 255, 255);
-  font-weight: 600;
+  font-weight: 300;
   z-index: 15;
   padding: 6px 10px;
   text-align: left;
   border-radius: 5px;
+  color: #000;
 }
 
 .direction-l .flag:after,
