@@ -12,11 +12,11 @@
     </div>
     <div class="container">
       <div class="row">
-        <div id="about-col" class="col-4">
+        <div id="about-col" class="col-6">
           <img
-            src="./imgs/tester.jpeg"
+            src="https://i.postimg.cc/Rq5Yym2D/Haniah2-1.jpg"
             width="95%"
-            height="80%"
+            height="95%"
             class="hover-shadow"
           />
         </div>
